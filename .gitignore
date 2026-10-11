@@ -1,0 +1,36 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.lic
+*.License
+*.pem
+*.key
+
+# --- Go ---
+/bin/
+/collector
+*.exe
+*.test
+*.out
+coverage.*
+
+# --- Node (custom viz build) ---
+node_modules/
+dist/
+npm-debug.log*
+
+# --- Data: raw ESPN/MLB API cache stays local (small test fixtures live in testdata/) ---
+/data/
+/cache/
+*.queue/
+
+# --- Splunk Docker volumes ---
+/splunk-etc/
+/splunk-var/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
